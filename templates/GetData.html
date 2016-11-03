@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<body>
+	{% if complete %}
+		<i>Data Downloaded.</i>
+	{% endif %}
+	<h3>Database Connected</h3>
+	<form action="/LoadData" method="POST">
+		Table to be imported: <input type="text" name="db_table" value="materials">
+		<input type="submit" name="LoadData" value="Send Data">
+	</form>
+</body>
+</html>

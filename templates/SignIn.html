@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<body>
+	{% if client_instance %}
+		<i>Incorrect login information, please try again.</i>
+	{% endif %}
+	<h3> Please Enter Username and Password</h3>
+	<form action="/SignIn" method="POST">
+		username: <input type="text" name="username">
+		password: <input type="text" name="password">
+		<input type="submit" name="SignIn" value="Send">
+	</form>
+</body>
+</html>

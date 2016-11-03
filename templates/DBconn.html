@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<body>
+	{% if error %}
+		<i>Error connecting to local database. Please try again.</i>
+	{% endif %}
+	<h2> Connect to your local Database</h2>
+	<h3> Please enter your local database infrmation.</h3>
+	<form action="/DBconn" method="POST">
+		Database User: <input type="text" name="db_user" value="root">
+		<br>
+		Database Password: <input type="text" name="db_pass" value="root">
+		<br>
+		Database Name: <input type="text" name="db_name" value="materialsmarketplace">
+		<br>
+		Database Host: <input type="text" name="db_host" value="localhost">
+		<input type="submit" name="DBconn" value="Send">
+</body>
+</html>
