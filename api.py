@@ -109,6 +109,9 @@ def load_data_post():
 
 		return render_template("./LoadData.html" , complete = True)
 
+@app.route("/GetData")
+def get_data():
+	return render_template("/GetData.html")
 
 ### Non-binded functions ###
 # Authorize and Create API instance with user login info
